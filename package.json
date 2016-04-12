@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-ericconi/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-ericconi#readme"
+  "homepage": "https://github.com/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-ericconi#readme",
+  "dependencies": {
+    "body-parser": "~1.12.2",
+    "ejs": "*",
+    "express": "^4.13.4",
+    "express-ejs-layouts": "~2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-install": "^0.6.0",
+    "gulp-shell": "*"
+  }
 }

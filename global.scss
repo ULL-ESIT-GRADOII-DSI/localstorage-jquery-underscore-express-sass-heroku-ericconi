@@ -1,0 +1,10 @@
+$width: 855px;
+$rcolumn: 2*$width/3;
+$lcolumn: $width/3;
+
+/* Remove the default margin and the padding 
+   of all the elements on the page. */
+* {
+    margin: 0;
+    padding: 0;
+}
