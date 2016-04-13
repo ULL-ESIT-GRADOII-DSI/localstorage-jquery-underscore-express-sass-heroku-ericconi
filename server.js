@@ -41,7 +41,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.get('/', function(req, res){
-  res.render('index', { title: "form"});
+  res.render('index', { title: "LocalStorage"});
 });
 
 app.post('/csv', function(req, res){
