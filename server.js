@@ -1,12 +1,7 @@
 var http = require('http');
 var csv = require('./csv.js')
 
-var server = http.createServer(function(req,res){
-	res.writeHead(200, {'Content-Type': 'text/html'});
-	res.end('<h1>Hello World</h1>');
-});
 
-var port = Number(3000);
 
 var express = require('express')
 var app = express()
@@ -55,4 +50,3 @@ app.listen(app.get('port'), function() {
 });
 
 
-server.listen(port);
