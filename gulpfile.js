@@ -1,4 +1,4 @@
-/*var gulp = require('gulp'),
+var gulp = require('gulp'),
 minify = require('gulp-minify'),
 cleanCSS = require('gulp-clean-css'),
 htmlmin = require('gulp-htmlmin'),
@@ -40,4 +40,4 @@ var ghPages = require('gulp-gh-pages');
 gulp.task('deploy', function() {
   return gulp.src('./minified/**//*')
     .pipe(ghPages());
-});*/
+});
