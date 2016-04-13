@@ -2,11 +2,23 @@
 #Práctica:
 
 #Comma Separated Values
+##Desarrollo de la Práctica
 
-For more information look at:
+* [Descripción de la práctica](https://casianorodriguezleon.gitbooks.io/pl1516/content/practicas/csv.html)
+* [Repositorio](https://github.com/ULL-ESIT-GRADOII-DSI/localstorage-jquery-underscore-express-sass-heroku-ericconi)
 
-* La sección *Práctica: Comma Separated Values. CSV* de los [apuntes](http://crguezl.github.io/pl-html/node11.html)
-* La [descripción de la práctica](https://casianorodriguezleon.gitbooks.io/pl1516/content/practicas/csv.html)
-* See it working at [CSV en GitHub Pages](http://crguezl.github.io/csv/)
-* See also [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) at Wikipedia.
+##Despliegue
 
+ * [Heroku](http://crguezl.github.io/pl-html/node11.html)
+  
+  
+
+## Enlaces a webs personales
+
+* [Constanza](http://alu0100673647.github.io)
+* [Eric](http://alu0100786330.github.io)
+
+
+## Información sobre la práctica
+
+ * See also [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) at Wikipedia.

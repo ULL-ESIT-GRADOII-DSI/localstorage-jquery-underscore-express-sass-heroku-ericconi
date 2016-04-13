@@ -1,14 +1,43 @@
-var gulp    = require('gulp');
-var shell = require('gulp-shell');
+/*var gulp = require('gulp'),
+minify = require('gulp-minify'),
+cleanCSS = require('gulp-clean-css'),
+htmlmin = require('gulp-htmlmin'),
+clean = require('gulp-clean')
 
-gulp.task('default', ['server']);
-
-// npm install supervisor -g
-gulp.task('server', function () {
-  return gulp.src('').pipe(shell([ 'node-supervisor app.js' ]));
+gulp.task('default', ['minify-js', 'minify-css', 'minify-html'], function() {
 });
 
-gulp.task('open', function() {
-  return gulp.src('').
-           pipe(shell("open https://github.com/crguezl/how-jquery-works-tutorial/tree/getallparams"));
+
+
+gulp.task('minify-css', function() {
+  return gulp.src(['*.css'])
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('minified/css'));
+})
+
+gulp.task('minify-html', function() {
+  return gulp.src('*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('minified'))
 });
+
+gulp.task('minify-js', function() {
+  gulp.src(['*.js'])
+    .pipe(minify({
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('minified/vendor'))
+});
+
+gulp.task('clean', function () {
+	return gulp.src('minified/*', {read: false})
+		.pipe(clean());
+});
+
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./minified/**//*')
+    .pipe(ghPages());
+});*/
