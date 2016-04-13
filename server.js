@@ -6,7 +6,7 @@ var server = http.createServer(function(req,res){
 	res.end('<h1>Hello World</h1>');
 });
 
-var port = Number(3000 || 3000);
+var port = Number(3000);
 
 var express = require('express')
 var app = express()
